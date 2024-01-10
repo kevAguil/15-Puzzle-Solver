@@ -1,0 +1,11 @@
+This program solves a 15 gem puzzle by using the A* search algorithm.
+Each possible move is checked in the expand function using if statements.
+If the move is possible, we create a new state (node) and save into a list
+holding all successor nodes. When creating the nodes, we copy all the data 
+from the parent node to the new states and update the f,g,h values. In this
+implementation, our heuristic function will be based on the distance of misplaced tiles to their right positions.
+We count all misplaced tiles using manhattan distance and update our f,g,h values accordingly. With 
+these values, we are able to merge the states into open, deciding which state 
+is most efficient. The rest of the code has been provided, I added implementations
+in the filtering and merge to open, as well as the printing in main that showcases 
+intial state, goal state, and the it takes to solve the puzzle. 
